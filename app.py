@@ -4,9 +4,10 @@ import pickle
 import numpy as np
 from xgboost import XGBRegressor
 
-pipe = pickle.load(open('pipe.pkl','rb'))
-train = pickle.load(open('train.pkl','rb'))
-
+# pipe = pickle.load(open('pipe.pkl','rb'))
+# train = pickle.load(open('train.pkl','rb'))
+pipe = pd.compat.pickle_compat.load(open('pipe.pkl','rb'))
+train = pd.compat.pickle_compat.load(open('train.pkl','rb'))
 
 st.title('LaptopPricePredictor')
 
